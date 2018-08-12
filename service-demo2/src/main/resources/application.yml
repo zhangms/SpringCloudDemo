@@ -1,10 +1,14 @@
 server:
-  port: 8081
+  port: 8082
 
 spring:
   application:
-    name: service-demo1
+    name: service-demo2
 eureka:
   client:
       service-url:
           defaultZone: http://eureka-server:8761/eureka/
+
+feign:
+  hystrix:
+    enabled: true
